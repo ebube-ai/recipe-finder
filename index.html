@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Recipe Finder</h1>
+        <p>Find delicious recipes from around the world</p>
+    </header>
+
+    <main>
+
+        <section class="search-section">
+            <form id="search-form">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search for a recipe..."
+                    autocomplete="off"
+                >
+                <button type="submit">Search</button>
+            </form>
+
+            <button id="random-btn">Get Random Recipe</button>
+        </section>
+
+        <p id="message"></p>
+
+        <section id="recipe-container" class="recipe-container"></section>
+
+    </main>
+
+    <!-- Recipe Modal -->
+    <div id="recipe-modal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="close-modal" class="close-btn">&times;</button>
+
+            <div id="recipe-details"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
